@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+/*import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
@@ -7,6 +7,24 @@ function NavBar() {
     
     </nav>
     );
+};
+
+export default NavBar;
+*/
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./NavBar.css";
+
+const NavBar = () => {
+  return (
+    <nav>
+      <NavLink to="/" exact>
+        Home
+      </NavLink>
+      <NavLink to="/directors">Directors</NavLink>
+      <NavLink to="/actors">Actors</NavLink>
+    </nav>
+  );
 };
 
 export default NavBar;
